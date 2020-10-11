@@ -46,7 +46,8 @@ class Fshare:
 
     def get_link(self, url, passwd=None):
         link = -1
-        ispass = int(self.get_link_info(url)['current']['pwd'])
+        #ispass = int(self.get_link_info(url)['current']['pwd'])
+        ispass = 1
         if ispass == 0:
             link = self.check_link(url)
         else:
